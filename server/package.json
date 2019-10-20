@@ -1,0 +1,22 @@
+{
+  "name": "pizzaman",
+  "version": "1.0.0",
+  "description": "serverless test",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dziejo93/pizzaman-serverless.git"
+  },
+  "author": "ja",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dziejo93/pizzaman-serverless/issues"
+  },
+  "homepage": "https://github.com/Dziejo93/pizzaman-serverless#readme",
+  "devDependencies": {
+    "claudia": "^5.9.0"
+  }
+}
