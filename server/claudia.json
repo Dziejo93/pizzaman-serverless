@@ -1,0 +1,11 @@
+{
+  "lambda": {
+    "role": "pizzaman-executor",
+    "name": "pizzaman",
+    "region": "eu-central-1"
+  },
+  "api": {
+    "id": "4wq09ejc73",
+    "module": "dist/api"
+  }
+}

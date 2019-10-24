@@ -2,9 +2,16 @@
   "name": "pizzaman",
   "version": "1.0.0",
   "description": "serverless test",
-  "main": "index.js",
+  "main": "dist/api",
+  "files": [
+    "dist/**/*.*",
+    "package.json"
+  ],
   "scripts": {
-    "test": "npm run test"
+    "test": "npm run test",
+    "build": "tsc",
+    "create": "claudia create --region eu-central-1 --api-module dist/api",
+    "update": "claudia update --region eu-central-1 --api-module dist/api"
   },
   "repository": {
     "type": "git",
@@ -17,9 +24,18 @@
   },
   "homepage": "https://github.com/Dziejo93/pizzaman-serverless#readme",
   "devDependencies": {
+    "@types/eslint": "^6.1.1",
+    "@types/node": "^12.11.6",
+    "@typescript-eslint/eslint-plugin": "^2.3.1",
+    "@typescript-eslint/parser": "^2.3.1",
+    "eslint": "^6.4.0",
+    "ts-jest": "^24.1.0",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.3"
+  },
+  "dependencies": {
     "claudia": "^5.9.0",
-    "eslint": "^6.1.0",
-    "eslint-config-airbnb": "^18.0.1",
-    "eslint-plugin-import": "^2.18.2"
+    "claudia-api-builder": "^4.1.2",
+    "claudia-bot-builder": "^4.5.0"
   }
 }
