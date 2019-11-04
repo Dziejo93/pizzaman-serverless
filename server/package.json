@@ -10,8 +10,8 @@
   "scripts": {
     "test": "npm run test",
     "build": "tsc",
-    "create": "claudia create --region eu-central-1 --api-module dist/api",
-    "update": "claudia update --region eu-central-1 --api-module dist/api"
+    "create": "tsc && claudia create --region eu-central-1 --api-module dist/api",
+    "update": "tsc && claudia update --region eu-central-1 --api-module dist/api"
   },
   "repository": {
     "type": "git",
