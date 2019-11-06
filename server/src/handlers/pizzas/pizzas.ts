@@ -1,5 +1,5 @@
 function getPizzas() {
-  return "returned all pizzas";
+  return process.env.DB_URI;
 }
 function getPizza(pizzaId: string) {
   return pizzaId;

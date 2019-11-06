@@ -8,7 +8,7 @@
     "package.json"
   ],
   "scripts": {
-    "test": "npm run test",
+    "test": "claudia test-lambda",
     "build": "tsc",
     "create": "tsc && claudia create --region eu-central-1 --api-module dist/api",
     "update": "tsc && claudia update --region eu-central-1 --api-module dist/api"
@@ -31,11 +31,14 @@
     "eslint": "^6.4.0",
     "ts-jest": "^24.1.0",
     "ts-node": "^8.4.1",
-    "typescript": "^3.6.3"
+    "typescript": "^3.7.2"
   },
   "dependencies": {
+    "@types/mongoose": "^5.5.29",
     "claudia": "^5.9.0",
     "claudia-api-builder": "^4.1.2",
-    "claudia-bot-builder": "^4.5.0"
+    "claudia-bot-builder": "^4.5.0",
+    "jest": "^24.9.0",
+    "mongoose": "^5.7.8"
   }
 }

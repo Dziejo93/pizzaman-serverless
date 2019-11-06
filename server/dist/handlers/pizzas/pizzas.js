@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 function getPizzas() {
-    return "returned all pizzas";
+    return process.env.DB_URI;
 }
 exports.getPizzas = getPizzas;
 function getPizza(pizzaId) {
